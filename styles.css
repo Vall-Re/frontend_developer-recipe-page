@@ -1,0 +1,195 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-50: hsl(330, 100%, 98%);
+  --rose-800: hsl(332, 51%, 32%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  color: var(--stone-900);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.recipe-page {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.image {
+  width: 100%;
+}
+
+.title {
+  font-family: 'Young Serif';
+  margin: 0;
+  padding: 24px;
+  color: var(--stone-900);
+}
+
+.title-description {
+  margin: 0;
+  padding: 0 24px;
+  color: var(--stone-600);
+}
+
+.preparation-time {
+  margin: 24px;
+  padding: 16px;
+  background-color: var(--rose-50);
+  border-radius: 20px;
+
+}
+
+.preparation-title {
+  margin: 0;
+  color: var(--rose-800);
+  margin-bottom: 12px;
+}
+
+.preparation-list {
+  margin: 0;
+  padding: 0 24px;
+}
+
+.preparation-list-item {
+
+  color: var(--stone-600);
+}
+
+.preparation-list-item::marker {
+  color: var(--rose-800);
+}
+
+.ingredients {
+
+  padding: 0 24px;
+}
+
+.subtitle {
+  margin: 0;
+  font-family: 'Young Serif';
+  color: var(--brown-800);
+  font-weight: 400;
+}
+
+.ingredients-list {
+  padding: 0 24px;
+}
+
+.ingredients-list-item {
+  color: var(--stone-600);
+
+}
+
+.ingredients-list-item::marker {
+  color: var(--brown-800);
+
+}
+
+.instructions {
+  padding: 0 24px;
+}
+
+.instructions-list {
+  padding: 24px;
+
+}
+
+.instructions-list-item {
+  color: var(--stone-600);
+  padding-left: 12px;
+  padding-bottom: 12px;
+}
+
+.instructions-list-item::marker {
+  color: var(--brown-800);
+}
+
+.nutrition {
+  padding: 0 24px;
+  margin-bottom: 24px;
+}
+
+.nutrition-description {
+  color: var(--stone-600);
+}
+
+.nutrition-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 32px;
+}
+
+.nutrition-name {
+  margin: 0;
+  color: var(--stone-600);
+}
+
+.nutrition-graph {
+  margin: 0;
+  color: var(--brown-800);
+  font-weight: 700;
+}
+.line {
+  border: none;
+  border-top: 1px solid var(--stone-150);
+  margin: 16px 0;
+
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--brown-800);
+}
+
+@media (min-width: 768px) {
+
+  body {
+    background-color: var(--stone-100);
+  }
+
+  .recipe-page {
+    max-width: 736px;
+    background-color: var(--white);
+    margin: 80px auto;
+    border-radius: 24px;
+    overflow: hidden; 
+  }
+
+  .image {
+    border-radius: 24px;
+    margin: 40px 40px 0 40px;
+    width: calc(100% - 80px);
+  }
+
+  .title {
+    padding: 40px 40px 24px 40px;
+  }
+
+  .title-description {
+    padding: 0 40px;
+  }
+
+  .preparation-time,
+  .ingredients,
+  .instructions,
+  .nutrition {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+}
